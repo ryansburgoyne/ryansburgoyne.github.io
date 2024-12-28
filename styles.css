@@ -1,0 +1,132 @@
+body {
+  font-family: sans-serif;
+  font-size: 11pt;
+  margin: 4em 3em;
+  color: rgb(37, 37, 37);
+}
+
+h1 {
+  margin-bottom: 0.4em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(232, 87, 87);
+}
+
+h2 {
+  font-size: 12pt;
+  margin-block-start: 0.7em;
+  margin-block-end: 0.3em;
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid rgb(199, 53, 53);
+}
+
+h3 {
+  font-size: 9pt;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+li {
+  margin-top: 0.1em;
+}
+
+.experience-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experience-list>li {
+  margin-top: 0.5em;
+}
+
+.experience-list ul {
+  margin: 0;
+  padding-inline-start: 1em;
+}
+
+.experience-list>li>ul>li {
+  list-style-type: disc;
+}
+
+.experience-list dl  {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 0.2em;
+}
+
+.experience-list dt {
+  display: none;
+}
+
+.experience-list dd {
+  width: 50%;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 0.1em;
+  padding: 0;
+}
+
+.experience-list dd:nth-of-type(1),
+.experience-list dd:nth-of-type(2) {
+  font-weight: bold;
+}
+
+.experience-list dd:nth-of-type(3),
+.experience-list dd:nth-of-type(4) {
+  font-style: italic;
+}
+
+.experience-list dd:nth-of-type(odd) {
+  text-align: left;
+}
+
+.experience-list dd:nth-of-type(even) {
+  text-align: right;
+}
+
+.contact-information {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+  display: flex;
+  gap: 0.5em;
+  margin: auto 0;
+}
+
+.contact-information dt {
+  display: none;
+}
+
+.contact-information dd {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.contact-information dd:not(:last-child)::after {
+  content: "\2022";
+  color: rgb(199, 53, 53);
+  margin-left: 0.5em;
+}
+
+.inline-list {
+  display: inline;
+  margin: 0;
+  padding: 0 !important;
+  list-style: none;
+}
+
+.inline-list li {
+  display: inline;
+}
+
+.inline-list li:after {
+  content: ", "
+}
+
+.inline-list li:last-child:after {
+  content: ""
+}
