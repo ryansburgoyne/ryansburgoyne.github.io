@@ -211,3 +211,51 @@ aside .inline-list li:after {
   font-weight: normal;
   font-size: 0.95em;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 1.5em 1.25em;
+  }
+
+  .contact-information {
+    flex-direction: column;
+    gap: 0.2em;
+  }
+
+  .contact-information dd:not(:last-child)::after {
+    display: none;
+  }
+
+  .resume-body {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+
+  main {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  aside {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 11pt;
+  }
+
+  aside .inline-list {
+    display: inline;
+  }
+
+  aside .inline-list li {
+    display: inline;
+    margin-top: 0;
+  }
+
+  aside .inline-list li:after {
+    content: ", ";
+  }
+
+  aside .inline-list li:last-child:after {
+    content: "";
+  }
+}
