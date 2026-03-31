@@ -259,3 +259,21 @@ aside .inline-list li:after {
     content: "";
   }
 }
+
+.attribution-footer {
+  text-align: left;
+  margin-top: 3em;
+  font-size: 0.8em;
+  color: rgb(150, 150, 150);
+}
+
+.attribution-footer a {
+  color: rgb(150, 150, 150);
+  text-decoration: underline;
+}
+
+@media print {
+  .attribution-footer {
+    display: none;
+  }
+}
