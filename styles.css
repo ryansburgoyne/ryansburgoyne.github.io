@@ -273,6 +273,14 @@ aside .inline-list li:after {
 }
 
 @media print {
+  aside {
+    font-size: 8.5pt;
+  }
+
+  body {
+    font-size: 8.5pt;
+  }
+
   .attribution-footer {
     display: none;
   }
