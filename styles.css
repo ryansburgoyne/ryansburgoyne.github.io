@@ -167,8 +167,12 @@ aside h3 {
 }
 
 @media print {
+  a {
+    text-decoration: underline;
+  }
+
   body {
-    margin: 0.4in;
+    margin: 0.3in 0.4in;
     font-size: 9.5pt;
   }
 
